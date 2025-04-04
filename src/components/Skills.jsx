@@ -26,11 +26,11 @@ const Skills = () => {
                     <p>Python</p>
                 </div>
                 <div className="skill-card csharp">
-                    <i className='fa fa-code'></i>
+                    <Image src='/images/csharp.png' width={24} height={24} style={{ filter: 'grayscale(100%)' }}></Image>
                     <p>C#</p>
                 </div>
                 <div className="skill-card cpp">
-                    <i className='fa fa-code'></i>
+                    <Image src='/images/cpp.png' width={24} height={24} style={{ filter: 'grayscale(100%)'  }}></Image>
                     <p>C++</p>
                 </div>
             </div>
