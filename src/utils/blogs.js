@@ -2,30 +2,26 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-const MarkDownDir = path.join(process.cwd(), 'src', 'contents', 'blogs');
+const blogsDir = path.join(process.cwd(), 'src/contents', 'blogs');
 
 export function getAllBlogs() {
-    const fileNames = fs.readdirSync(MarkDownDir);
-
-    return fileNames.map((fileName) => {
-        const filePath = path.join(MarkDownDir, fileName);
-        const fileContents = fs.readFileSync(filePath, 'utf8');
-        const { data } = matter(fileContents);
-
+    const paths = fs.readdirSync(blogsDir);
+    const posts = paths.map((p) => {
+        const file = fs.readFileSync(path.join(blogsDir, p));
+        const parsed = matter(file);
         return {
-            slug: fileName.replace('.md', ''),
-            frontmatter: data
+            ...parsed.data,
         };
-    }).sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+    });
+    return posts;
 }
 
 export function getBlogBySlug(slug) {
-    const filePath = path.join(MarkDownDir, `${slug}.md`);
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-    const { data, content } = matter(fileContents);
-
+    const filepath = path.join(blogsDir, `${slug}.md`);
+    const fileContents = fs.readFileSync(filepath);
+    const { metadata, content } = matter(fileContents);
     return {
-        frontmatter: data,
+        metadata,
         content
     };
 }

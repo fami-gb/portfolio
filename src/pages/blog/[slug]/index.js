@@ -6,13 +6,12 @@ import gfm from 'remark-gfm';
 
 export async function getStaticPaths() {
     const blogs = getAllBlogs();
-    const paths = blogs.map((blog) => ({
-        params: { slug: blog.slug }
+    const paths = blogs.map((blog) => ({ 
+        params: { slug: blog.slug },
     }));
-
     return {
         paths,
-        fallback: false, // 必要に応じて true または 'blocking' に変更
+        fallback: false,
     };
 }
 

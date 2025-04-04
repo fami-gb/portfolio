@@ -10,17 +10,14 @@ const Home = () => {
     return (
         <>
             <Head>
-                <title>famigbのポートフォリオ</title>
-                <meta name='description' content='famigbのポートフォリオ' />
+                <title>famigb</title>
+                <meta name='description' content='famigb' />
                 <meta name='viewport' content='width=device-width, initial-scale=1'/>
                 <link rel='icon' href='/images/favicon.ico' />
             </Head>
             <div>
                 <Hero />
                 <About />
-                <Skills />
-                <Projects />
-                <Contact />
             </div>
         </>
     );
