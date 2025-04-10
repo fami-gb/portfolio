@@ -3,6 +3,6 @@
     "compatibility_date": "2025-04-10",
     "compatibility_flags": ["nodejs_compat"],
     "assets": {
-      "directory": "./src"
+      "directory": ".vercel/output/static"
     }
   }
