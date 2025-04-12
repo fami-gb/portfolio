@@ -3,6 +3,6 @@
     "compatibility_date": "2025-04-12",
     "compatibility_flags": ["nodejs_compat"],
     "assets": {
-      "directory": ".output/static"
+      "directory": "out"
     }
   }
