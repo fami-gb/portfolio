@@ -1,6 +1,6 @@
 import { projectData } from './data.js';
 import '@/styles/globals.css';
-import './index.css';
+// import './index.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
