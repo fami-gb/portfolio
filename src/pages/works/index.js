@@ -1,6 +1,10 @@
 import { projectData } from './data.js';
+import '@/styles/globals.css';
+import './index.css';
+import Link from 'next/link';
+import Image from 'next/image';
 
-const Projects = () => {
+export default function Projects() {
     return (
         <div className='projects-container'>
             <h2>My Porjects</h2>
@@ -21,5 +25,3 @@ const Projects = () => {
         </div>
     )
 }
-
-export default Projects;
