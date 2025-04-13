@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans JP', serif;
 }
 
 body {
-  font-family: 'Noto Sans JP', serif;
+  /* font-family: 'Noto Sans JP', serif; */
   font-size: 16px;
   line-height: 1.5;
   background-color: #1D1E20;
