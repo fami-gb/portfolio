@@ -1,4 +1,4 @@
-import { projectData } from './data.js';
+import { projectData } from '@/utils/data';
 import '@/styles/globals.css';
 // import './index.css';
 import Link from 'next/link';
