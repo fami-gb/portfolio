@@ -12,5 +12,12 @@ export const projectData = [
         description:
             '日本語をヒエログリフに変換するアプリ。日本語の文章をヒエログリフに変換してくれる。',
         gitHubLink: 'https://github.com/fami-gb/Jap2Hieroglyph'
+    },
+    {
+        id: 3,
+        title: 'calculator',
+        description:
+            '簡単な計算機。足し算、引き算、掛け算、割り算が出来る。',
+        gitHubLink: 'https://github.com/fami-gb/calculator'
     }
 ];
